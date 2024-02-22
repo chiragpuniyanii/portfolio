@@ -52,7 +52,7 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(56da5cf5-4dbb-4b7a-a004-fef2e9c930c5.jpg)no-repeat;
+    background: url(back.jpg)no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -280,7 +280,7 @@ body{
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
 }
-.bar{
+/* .bar{
     font-size: 23px;
 }
 .Technical-bars .bar{
@@ -395,7 +395,7 @@ body{
 }
 .progress-line.networking span::after{
     content: 90%;
-}
+} */
 
 .progress-line span::before{
     content: "";
@@ -416,6 +416,80 @@ body{
         opacity: 1;
     }
 }
+
+
+  /* Stylingthe last h2 tag by giving margin bottom */
+        .progress-bar-container:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    
+        /* Styling the h2 tag by giving color, 
+        letter spacing, font-size etc.*/
+        .progress-bar-container h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+    
+        /* Styling the border and box
+        effect of the progress bar*/
+        .progress-bar {
+            width: 400px;
+            height: 8px;
+            margin-top: 10px;
+            border: 1px solid #565656;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(10, 96, 128);
+        }
+    
+        /* Stylingthe background color of each 
+        animation and border radius */
+        .percentagee {
+            display: block;
+            height: 100%;
+           border-radius: 5px;
+            animation: progress 1500ms ease-in 1;
+        }
+    
+        .progress-bar-container h2{
+            color: #fff;
+        }
+        /* Assigning width of each languages*/
+        .html {
+            width: 90%;
+            background-color: #0ef !important ;
+        }
+    
+        .css {
+            width: 85%;
+            background-color: #0ef !important;
+        }
+    
+        .javascript {
+            width: 45%;
+            background-color: #0ef !important;
+        }
+    
+        .java {
+            width: 75%;
+            background-color: #0ef !important;
+        }
+    
+        .python {
+            width: 85%;
+            background-color: #0ef !important;
+        }
+    
+       
+    
+        /* Animating the progress bar by 
+        initially starting from 0*/
+        @keyframes progress {
+            from {
+                width: 0;
+            }
+        }
 
 .radial-bars{
     width: 100%;
