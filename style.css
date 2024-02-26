@@ -53,7 +53,7 @@ body{
     justify-content: space-between;
     height: 100vh;
     background: url(back.jpg)no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     display: flex;
     align-items: center;
@@ -917,6 +917,7 @@ body{
         align-items: normal;
         padding-top: 40%;
         padding-bottom: 0;
+        height: 100% !important;
     }
     .home-content h1 {
         font-size: 40px;
