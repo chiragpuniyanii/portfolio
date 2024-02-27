@@ -1386,6 +1386,9 @@ body{
         padding: 10px 40px;
         font-size: 14px;
     }
+    .contact{
+        text-align: center;
+    }
 }
 
 /* Additional styles */
