@@ -1317,6 +1317,7 @@ body{
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 0 15px;
+        text-align: center;
     }
 
     .contact-text h2 {
@@ -1405,6 +1406,9 @@ body{
 
 /* For screens smaller than 375px (e.g., iPhone SE) */
 @media (max-width: 375px) {
+    .contact{
+        text-align: center;
+    }
     .contact-text h2 {
         font-size: 32px;
     }
