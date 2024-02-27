@@ -1305,6 +1305,14 @@ body{
 
 /* For screens smaller than 768px */
 @media (max-width: 768px) {
+    .home{
+        width: 100%;
+        align-items: normal;
+        padding-top: 40%;
+        padding-bottom: 0;
+        color: #ededed;
+        background: #081b29;
+    }
     .contact {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -1393,4 +1401,46 @@ body{
 .top i {
     font-size: 18px;
     padding: 8px;
+}
+
+/* For screens smaller than 375px (e.g., iPhone SE) */
+@media (max-width: 375px) {
+    .contact-text h2 {
+        font-size: 32px;
+    }
+
+    .contact-text h4 {
+        font-size: 14px;
+    }
+
+    .contact-text p {
+        font-size: 12px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-list i {
+        font-size: 16px;
+    }
+
+    .contact-icons i {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        margin: 10px 8px 10px 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .contact-form form .send {
+        padding: 8px 36px;
+        font-size: 12px;
+    }
+
+    .last-text {
+        font-size: 12px;
+    }
 }
