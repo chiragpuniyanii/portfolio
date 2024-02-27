@@ -47,13 +47,15 @@ body{
 .navbar a:hover{
     color: #0ef;
 }
+
+/* <!-- --------------------section 1 Start--------------------------- --> */
 .home{
     position: relative;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
     background: url(back.jpg)no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
@@ -141,14 +143,19 @@ body{
 }
 
 
+/* <!-- --------------------section 1 End--------------------------- --> */
+
+
+/* <!-- --------------------section 2 Start--------------------------- --> */
+
 .about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
 
-
 }
+
 
 .about-img img{
     padding-bottom: 20%;
@@ -179,12 +186,47 @@ body{
     margin-bottom: 4rem;
 
 }
+/* For screens smaller than 768px (e.g., tablets and phones) */
+@media (max-width: 768px) {
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+   
+    .about-text h2 {
+        font-size: 40px;
+    }
+    .about-text h4 {
+        font-size: 24px;
+    }
+    .about-text p {
+        font-size: 18px;
+    }
 
+}
+
+/* For screens smaller than 576px (e.g., phones) */
+@media (max-width: 576px) {
+    .about-text h2 {
+        font-size: 32px;
+    }
+    .about-text h4 {
+        font-size: 20px;
+    }
+    .about-text p {
+        font-size: 16px;
+    }
+}
+
+/* <!-- --------------------section 2 End--------------------------- --> */
+
+
+/* <!-- --------------------section 3 Start--------------------------- --> */
 #services{
     color: aliceblue;
     font-size: 20px ;
     line-height: 1.4;
-    margin-top: 4rem;
+    margin-top: -150px;
 
 }
 .sub-title{
@@ -235,6 +277,10 @@ body{
     margin-top: 20px;
     display: inline-block;
 }
+
+
+
+
 .read{
     display: inline-block;
     padding: 12px 28px;
@@ -262,6 +308,64 @@ body{
     transform: translateY(-10px);
 }
 
+/* For screens smaller than 768px (e.g., tablets and phones) */
+@media (max-width: 768px) {
+    .container {
+        padding: 50px;
+    }
+    .sub-title {
+        font-size: 40px;
+        padding-bottom: 50px;
+    }
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+    .services-list div {
+        padding: 20px;
+    }
+    .services-list div i {
+        font-size: 40px;
+    }
+    .services-list h2 {
+        font-size: 24px;
+    }
+    .services-list div a {
+        font-size: 14px;
+    }
+}
+
+/* For screens smaller than 576px (e.g., phones) */
+@media (max-width: 576px) {
+    .container {
+        padding: 30px;
+    }
+    .sub-title {
+        font-size: 32px;
+        padding-bottom: 40px;
+    }
+    .services-list div {
+        padding: 15px;
+    }
+    .services-list div i {
+        font-size: 30px;
+    }
+    .services-list h2 {
+        font-size: 20px;
+    }
+    .services-list div a {
+        font-size: 12px;
+    }
+    #services{
+        margin-top: 100px;
+    }
+}
+
+/* <!-- --------------------section 3 End--------------------------- --> */
+
+
+/* <!-- --------------------section 4 Start--------------------------- --> */
+
 
 .section{
     display: flex;
@@ -281,122 +385,7 @@ body{
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
 }
-/* .bar{
-    font-size: 23px;
-}
-.Technical-bars .bar{
-    margin-top: 40px 0;
-}
-.Technical-bars .bar:first-child{
-    margin-top: 0;
-}
-.Technical-bars .bar:last-child{
-    margin-bottom: 0;
-}
-.Technical-bars .bar .info{
-    margin-bottom: 5px;
-}
-.Technical-bars .bar .info span{
-    font-size: 17px;
-    font-weight: 500;
-    animation: showText 0.5s 1s linear forwards;
-    opacity: 0;
 
-}
-.Technical-bars .bar .progress-line{
-    position: relative;
-    border-radius: 10px;
-    width: 100%;
-    height: 5px;
-    background-color: #000000;
-    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-@keyframes animate{
-    100%{
-        transform: scaleX(1);
-    }
-
-}
-.Technical-bars .bar .progress-line span{
-    height: 100%;
-    background-color: #0ef;
-    position: absolute;
-    border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-}
-.progress-line.html span{
-    width: 90%;
-
-
-}
-.progress-line.css span{
-    width: 90%;
-
-
-}
-.progress-line.javascript span{
-    width: 90%;
-
-
-}
-.progress-line.python span{
-    width: 90%;
-
-
-}
-.progress-line.react span{
-    width: 90%;
-
-
-}
-.progress-line.java span{
-    width: 90%;
-
-
-}
-.progress-line.networking span{
-    width: 90%;
-
-
-}
-
-.progress-line span::after{
-    position: absolute;
-    padding: 1px 8px;
-    background-color: #000;
-    color: #fff;
-    font-size: 12px;
-    border-radius: 3px;
-    top: -28px;
-    right: -20px;
-    animation: showText 0.5s 1.5s linear forwards;
-    opacity: 0;
-}
-.progress-line.html span::after{
-    content: 90%;
-}
-.progress-line.css span::after{
-    content: 90%;
-}
-.progress-line.javascript span::after{
-    content: 90%;
-}
-.progress-line.python span::after{
-    content: 90%;
-}
-.progress-line.react span::after{
-    content: 90%;
-}
-.progress-line.java span::after{
-    content: 90%;
-}
-.progress-line.networking span::after{
-    content: 90%;
-} */
 
 .progress-line span::before{
     content: "";
@@ -580,7 +569,7 @@ body{
     width: 100%;
     position: absolute;
     text-align: center;
-    left: 50%;
+    left: 25%;
     bottom: -5px;
     transform: translateX(-50px);
     font-size: 17px;
@@ -589,6 +578,10 @@ body{
     opacity: 0;
 }
 
+
+/* <!-- --------------------section 4 End--------------------------- --> */
+
+/* <!-- --------------------section 5 Start--------------------------- --> */
 
 .main-text{
     padding-top: 100px;
@@ -670,6 +663,9 @@ body{
 }
 
 
+/* <!-- --------------------section 5 End--------------------------- --> */
+
+/* <!-- --------------------section 6 Start--------------------------- --> */
 .contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -808,6 +804,8 @@ body{
     border-radius: 0.5rem;
 }
 
+/* <!-- --------------------section 6 End--------------------------- --> */
+
 @keyframes slideRight{
     0%{
         transform: translateX(-100px);
@@ -918,6 +916,8 @@ body{
         padding-top: 40%;
         padding-bottom: 0;
         height: 100% !important;
+        color: #ededed;
+        background: #081b29;
     }
     .home-content h1 {
         font-size: 40px;
@@ -981,7 +981,7 @@ body{
         width: 600px;
         max-height: 500px;
         padding: 20px;
-        margin-left: 50px;
+        margin-left: 0px;
     }
     .container2 {
         width: 600px;
@@ -1004,6 +1004,83 @@ body{
     .bar .info .addc::before{
         content: "50%";
     }
+
+    /* Common styles for both technical and professional skills */
+.container1 {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.heading1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Technical skills */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.progress-bar-container {
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.percentagee {
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #0ef;
+    animation: progress 1s ease-in-out;
+}
+
+/* Professional Skills */
+.radial-bars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.radial-bar {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.percentage, .text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .radial-bar {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 576px) {
+    .container1 {
+        padding: 10px;
+    }
+    .heading1 {
+        font-size: 20px;
+    }
+    .radial-bar {
+        width: 100%;
+    }
+}
 
     /*project*/
     .main-text {
@@ -1049,6 +1126,7 @@ body{
     
 }
 
+
 @media (max-width: 400px) {
     *{
         overflow-x: hidden;
@@ -1083,6 +1161,8 @@ body{
         align-items: normal;
         padding-top: 40%;
         padding-bottom: 0;
+        color: #ededed;
+        background: #081b29;
     }
     .home-content h1 {
         font-size: 30px;
@@ -1221,4 +1301,96 @@ body{
     .top i{
         color: #000;
     }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .contact {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 15px;
+    }
+
+    .contact-text h2 {
+        font-size: 60px;
+    }
+
+    .contact-text h4 {
+        font-size: 18px;
+    }
+
+    .contact-text p {
+        font-size: 16px;
+    }
+
+    .contact-icons i {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        margin: 20px 10px 20px 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .contact-form form .send {
+        padding: 12px 50px;
+        font-size: 16px;
+    }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+    .contact-text h2 {
+        font-size: 40px;
+    }
+
+    .contact-text h4 {
+        font-size: 16px;
+    }
+
+    .contact-text p {
+        font-size: 14px;
+    }
+
+    .contact-list i {
+        font-size: 18px;
+    }
+
+    .contact-icons i {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+        margin: 15px 10px 15px 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .contact-form form .send {
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+}
+
+/* Additional styles */
+.last-text {
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+.top {
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.top i {
+    font-size: 18px;
+    padding: 8px;
 }
