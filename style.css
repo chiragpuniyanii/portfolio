@@ -158,11 +158,11 @@ body{
 
 
 .about-img img{
-    padding-bottom: 20%;
     max-width: 630px;
     height: auto;
     width: 100%;
     border-radius:8px;
+    /* border: 2px solid #0ef; */
 
 }
 .about-text h2{
@@ -201,8 +201,13 @@ body{
     }
     .about-text p {
         font-size: 18px;
+        text-align: center !important;
+        padding: 25px 25px;
+        text-align: justify !important;
     }
-
+    .about-img img{
+        border: 2px solid #0ef;
+    }
 }
 
 /* For screens smaller than 576px (e.g., phones) */
@@ -215,6 +220,12 @@ body{
     }
     .about-text p {
         font-size: 16px;
+        text-align: center !important;
+        padding: 25px 25px;
+        text-align: justify !important;
+    }
+    .about-img img{
+        border: 2px solid #0ef;
     }
 }
 
@@ -959,6 +970,11 @@ body{
         font-size: 30px;
         letter-spacing: 5px;
     }
+    
+    .about-img img{
+            border: 2px solid #0ef;
+        }
+
     
     .about-text p {
         font-size: 15px;

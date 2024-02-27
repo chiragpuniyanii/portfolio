@@ -13,7 +13,6 @@ body{
 
 
 .about-img img{
-    padding-bottom: 20%;
     max-width: 630px;
     height: auto;
     width: 100%;
@@ -48,10 +47,6 @@ body{
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .about-img img {
-        padding-bottom: 10%;
-        max-width: 80%;
-    }
     .about-text h2 {
         font-size: 40px;
     }
@@ -60,6 +55,12 @@ body{
     }
     .about-text p {
         font-size: 18px;
+        text-align: center;
+        text-align: justify;
+        padding: 25px 25px;
+    }
+    .about-img img{
+        border: 2px solid #0ef;
     }
 }
 
@@ -73,5 +74,11 @@ body{
     }
     .about-text p {
         font-size: 16px;
+        text-align: center;
+        text-align: justify;
+        padding: 25px 25px;
+    }
+    .about-img img{
+        border: 2px solid #0ef;
     }
 }
