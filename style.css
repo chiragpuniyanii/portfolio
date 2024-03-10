@@ -153,6 +153,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+    padding: 5%;
 
 }
 
@@ -267,8 +268,9 @@ body{
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px #012290f7,
-    1px 1px 40px #0053b8f7
+    border: 3px solid #0053b8f7;
+    /* box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b8f7 */
 }
 
 .services-list div i{
@@ -317,6 +319,9 @@ body{
 
 .services-list div:hover{
     transform: translateY(-10px);
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b8f7;
+    transform: scale(0.9)
 }
 
 /* For screens smaller than 768px (e.g., tablets and phones) */
